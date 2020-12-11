@@ -14,6 +14,8 @@ $ make
 $ docker build . -t what_is_include/latest
 $ sudo docker run -p 10000:22 --name problem what_is_include/latest
 ```
+## writeup
+writeup.md を見てください
 
 ## Comment
 Dockerの使いかたよくわかっていないためDockerfileやコマンドがよくなさそう。
