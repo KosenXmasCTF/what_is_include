@@ -1,5 +1,5 @@
 # what is include?
-![Genre: Pwn](https://img.shields.io/badge/genre-pwn-brightgreen?style=for-the-badge)
+![Genre: Misc](https://img.shields.io/badge/genre-misc-brightgreen?style=for-the-badge)
 ![Difficulty: Normal](https://img.shields.io/badge/difficulty-Normal-blue?style=for-the-badge)
 ![Author: iwancof](https://img.shields.io/badge/author-iwancof-lightgrey?style=for-the-badge)
 
