@@ -1,6 +1,6 @@
 # what is include?
 ![Genre: Misc](https://img.shields.io/badge/genre-misc-brightgreen?style=for-the-badge)
-![Difficulty: Normal](https://img.shields.io/badge/difficulty-Normal-blue?style=for-the-badge)
+![Difficulty: Medium](https://img.shields.io/badge/difficulty-Medium-blue?style=for-the-badge)
 ![Author: iwancof](https://img.shields.io/badge/author-iwancof-lightgrey?style=for-the-badge)
 
 彼は #include の意味がよくわかっていないみたい！
