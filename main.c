@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<time.h>
 #include<stdlib.h>
 
 int main() {
@@ -22,14 +23,25 @@ int main() {
 	puts("}");
 	puts("");
 
-	FILE *fp = fopen("/tmp/program.c", "w");
+	srand(time(NULL));
+	char c_filename[64], bin_filename[64];
+	int random = rand();
+	sprintf(c_filename, "/tmp/program_%d.c", random);
+	sprintf(bin_filename, "/tmp/program_%d", random);
+
+	FILE *fp = fopen(c_filename, "w");
 	fprintf(fp, "#include %s", include_file);
 	fprintf(fp, "int main() {");
 	fprintf(fp, "	printf(\"Hello World\");");
 	fprintf(fp, "}");
 	fclose(fp);
+	
+	char command[128];
+	sprintf(command, "gcc -o %s %s", bin_filename, c_filename);
+	system(command);
 
-	system("rm /tmp/program -f");
-	system("gcc /tmp/program.c -o /tmp/program");
-	system("/tmp/program");
+	system(bin_filename);
+
+	sprintf(command, "rm bin_filename -f");
+	system(command);
 }
