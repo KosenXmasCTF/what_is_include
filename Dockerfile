@@ -10,7 +10,7 @@ RUN useradd guest -m
 
 RUN echo "guest" | passwd --stdin guest
 
-RUN echo "/home/what_is_include; exit" > ~guest/.bashrc
+RUN echo "timeout 20 /home/what_is_include; exit" > ~guest/.bashrc
 
 ENTRYPOINT ["/sbin/sshd", "-D"]
 
