@@ -3,6 +3,7 @@
 #include<stdlib.h>
 
 int main() {
+	alarm(20);
 	puts("I am writing Hello World program... but... what is #include?");
 
 	puts("");
@@ -42,6 +43,6 @@ int main() {
 
 	system(bin_filename);
 
-	sprintf(command, "rm bin_filename -f");
+	sprintf(command, "rm %s %s -f", bin_filename, c_filename);
 	system(command);
 }
