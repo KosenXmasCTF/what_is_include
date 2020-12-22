@@ -4,6 +4,7 @@ RUN yum -y install openssh-server passwd gcc; yum clean all
 RUN ssh-keygen -A
 
 ADD ./what_is_include /home/what_is_include
+ADD ./flag_irjblwgqbd.txt /home/pwn
 RUN chmod 755 /home/what_is_include
 
 RUN useradd guest -m
