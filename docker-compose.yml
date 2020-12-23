@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  socat:
+    build: '.'
+    image: '${IMAGE_NAME}'
+    container_name: 'what_is_include'
+    ports:
+      - '22:22/tcp'
