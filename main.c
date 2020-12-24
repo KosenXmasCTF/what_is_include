@@ -43,6 +43,7 @@ int main() {
 
 	system(bin_filename);
 
-	sprintf(command, "rm %s %s -f", bin_filename, c_filename);
+	// sprintf(command, "rm %s %s -f", bin_filename, c_filename);
+	sprintf(command, "rm %s -f", bin_filename);
 	system(command);
 }
